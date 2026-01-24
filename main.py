@@ -1,6 +1,7 @@
 import cv2
 import time 
 import numpy as np 
+import pyautogui
 import mediapipe as mp
 from mediapipe.tasks import python
 from mediapipe.tasks.python import vision
@@ -42,6 +43,9 @@ while True:
             
             for x, y in lm_list:
                 cv2.circle(img, (x, y), 8, (0, 255, 0), cv2.FILLED)
+
+
+            
     
     
     
